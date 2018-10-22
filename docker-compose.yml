@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  sentence-service:
+    build: ../janus-sentence-service
+    image: janus/sentence-service
+    ports:
+      - "3000:3000"
+  buzzword-ui:
+    build: ../janus-buzzword-ui
+    image: janus/buzzword-ui
+    ports:
+      - "8080:8080"
