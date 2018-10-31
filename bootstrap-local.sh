@@ -13,3 +13,7 @@
 git clone https://github.com/AndrewBell/janus-buzzword-ui.git ../janus-buzzword-ui
 
 git clone https://github.com/AndrewBell/janus-sentence-service.git ../janus-sentence-service
+
+git clone https://github.com/AndrewBell/janus-word-service.git ../janus-word-service
+
+docker-compose build
