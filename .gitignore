@@ -72,3 +72,8 @@ dist
 .tmp
 .sass-cache
 bower_components
+
+### Terraform ###
+.terraform
+.terraform.tfstate.lock.info
+terraform.tfstate*

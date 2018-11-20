@@ -3,33 +3,32 @@ version: '3'
 services:
   sentence-service:
     build: ../janus-sentence-service
-    image: janus/sentence-service
+    image: recursivechaos/sentence-service
     ports:
       - "3000:3000"
   buzzword-ui:
     build: ../janus-buzzword-ui
-    image: janus/buzzword-ui
+    image: recursivechaos/buzzword-ui
     ports:
       - "8080:8080"
   noun-service:
     build: ../janus-word-service
-    image: janus/noun-service
+    image: recursivechaos/noun-service
     ports:
     - "3001:3000"
     environment:
     - WORD_TYPE=NOUN
   verb-service:
     build: ../janus-word-service
-    image: janus/verb-service
+    image: recursivechaos/verb-service
     ports:
     - "3002:3000"
     environment:
     - WORD_TYPE=VERB
   adjective-service:
     build: ../janus-word-service
-    image: janus/adjective-service
+    image: recursivechaos/adjective-service
     ports:
     - "3003:3000"
     environment:
     - WORD_TYPE=ADJECTIVE
-
